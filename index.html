@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Agenda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Mi Agenda de Contactos</h1>
+
+  <h2>Agregar contacto</h2>
+
+  <input type="text" id="nombre" placeholder="Nombre">
+  <input type="text" id="apellido" placeholder="Apellido">
+  <input type="text" id="telefono" placeholder="Teléfono">
+  <button onclick="agregarContacto()">Agregar</button>
+
+  <p id="mensaje"></p>
+
+  <h2>Lista de contactos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Teléfono</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr>
+        <td colspan="3">Cargando...</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
